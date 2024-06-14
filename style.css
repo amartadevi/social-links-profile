@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400,600,700&');
+
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Off-Black);
+    color: var(--White);
+    min-height: 100vh;
+    font-size: 18px;
+    font-family:"Inter", sans-serif;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.container{
+    background-color:var(--Dark-Grey);
+    max-width: 800px;
+    text-align: center;
+    margin: 2rem;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+.container p{
+    margin: 2rem;
+}
+p{
+    font-size: 14px;
+}
+.container h4{
+    margin: 4px;
+    color: var(--Green);
+    font-weight: normal;
+    font-size: 16px;
+}
+.container .image{
+    margin: 1rem;
+}
+img{
+    border-radius: 50%;
+    max-width: 80px;
+}
+.GitHub, .frontendmentor, .LinkedIn, .Instagram, .Twitter{
+    max-width: 100%;
+    background-color: var(--grey);
+    border-radius: 5px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .75rem;
+}
+.GitHub:hover, .frontendmentor:hover, .LinkedIn:hover, .Instagram:hover, .Twitter:hover{
+    background-color: var(--Green);
+    cursor: pointer;
+}
